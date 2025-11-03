@@ -9,7 +9,7 @@ function App() {
 
   return (
       <>
-          <h1>Pelosi App</h1>
+          <h1>Stockn Dashboard</h1>
           <button
               onClick={handleClick}
               className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"

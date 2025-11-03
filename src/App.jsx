@@ -39,7 +39,7 @@ function App() {
           className="p-4 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200"
         >
           <div className="flex items-center justify-between">
-            <div>
+            <div className="p-[10px]">
               <h4 className="text-lg font-bold text-gray-800">
                 {item.displaySymbol}
               </h4>

@@ -28,12 +28,33 @@ function App() {
           >Get Stock Price</button> */}
            <button onClick={() => searchSymbol("AAPL")}>Search AAPL</button>
           
-          {results && 
+{results && results.result && (
+  <div className="mt-6">
+    <h3 className="text-xl font-semibold mb-3">Search Results</h3>
+
+    <div className="grid gap-3">
+      {results.result.map((item) => (
+        <div
+          key={item.symbol}
+          className="p-4 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200"
+        >
+          <div className="flex items-center justify-between">
             <div>
-                <h3>Results:</h3>
-                <pre>{JSON.stringify(results, null, 2)}</pre>
+              <h4 className="text-lg font-bold text-gray-800">
+                {item.displaySymbol}
+              </h4>
+              <p className="text-sm text-gray-500">{item.type}</p>
             </div>
-           }
+            <p className="text-sm font-medium text-gray-700">
+              {item.description}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+)}
+
 
     </>
   )

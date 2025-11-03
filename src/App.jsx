@@ -9,12 +9,12 @@ function App() {
 
   return (
       <>
-          <h1>Stockn Dashboard</h1>
+          <h1>Stock Dashboard</h1>
           <button
               onClick={handleClick}
               className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
           >Fetch Data</button>
-
+{/* 
           <div className="grid grid-cols-3 gap-4">
   <div>Item 1</div>
   <div>Item 2</div>
@@ -37,7 +37,7 @@ function App() {
   <div className="bg-sky-950"></div>
           </div>
           
-<div className="w-6 h-6 bg-red-500">xxx</div>
+<div className="w-6 h-6 bg-red-500">xxx</div> */}
 
 
     </>

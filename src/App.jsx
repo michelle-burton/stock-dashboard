@@ -45,7 +45,7 @@ function App() {
               </h4>
               <p className="text-sm text-gray-500">{item.type}</p>
             </div>
-            <p className="text-sm font-medium text-gray-700">
+            <p className="text-sm font-medium text-gray-700 p-[10px]">
               {item.description}
             </p>
           </div>

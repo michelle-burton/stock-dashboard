@@ -1,20 +1,97 @@
-# React + Vite
+# 🧠 Equity Intelligence Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight **market snapshot + delta + narrative** dashboard for long-term pattern tracking.
 
-Currently, two official plugins are available:
+This is **not a trading bot** and **not a brokerage tool** — it’s a personal intelligence engine built to capture repeatable snapshots, compare changes over time, and translate deterministic deltas into clear, human-readable insight.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ What It Does (MVP)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ✅ **Snapshot Viewer** — Latest vs Previous snapshot cards
+- ✅ **Delta Comparison** — “What changed?” table across time windows + price
+- ✅ **Snapshot History** — compact timeline view with quick red/green trend signal
+- ✅ **AI Summary (Deterministic Narrative)** — generates a structured write-up from snapshot deltas
+- ✅ **Capture Panel** — capture snapshots and persist them locally for ongoing tracking
+- ✅ **Local Persistence** — captured snapshots saved to `localStorage` (zero infrastructure)
 
-Used for old mac: 
-npm install -D tailwindcss@3.4.17 @tailwindcss/vite
+---
+
+## 🧩 What Makes This Different
+
+- ❌ Not a trading bot  
+- ❌ Not a brokerage  
+- ❌ Not institutional research redistribution  
+
+This is a **personal intelligence engine** built on structured, repeatable captures.
+
+It emphasizes:
+
+- 🧠 **Memory**
+- 🔄 **Deltas**
+- 📊 **Pattern tracking**
+- ✍️ **Narrative clarity**
+- 🧱 **Systemization over impulse**
+
+---
+
+## 🧠 AI Summary Philosophy
+
+The **AI Summary** is intentionally *not* a free-form chatbot response.
+
+It is a controlled narrative layer that:
+
+1. Computes deterministic deltas (math)
+2. Detects alignment/conflict across timeframes
+3. Produces a concise summary with watch-items
+
+This reduces hallucination and keeps the system trustworthy.
+
+---
+
+## 🚀 Live Data Roadmap (Finnhub)
+
+The next step is wiring live market data via **Finnhub**:
+
+- **Quote** → current price  
+- **Candles (daily)** → compute time-window returns (1W / 1M / 3M / 6M / 1Y)  
+- **Profile + Metrics** → market cap, P/E, beta  
+
+---
+---
+
+# 🔗 Live Site
 
 
-terminal: npm run dev
+👉 **https://equity-intelligence-dashboard.onrender.com/**
+
+---
+
+## 🔮 Future Iterations
+
+- 📆 Multi-snapshot comparison (select any baseline date)
+- 📉 Visual trend charts
+- 🏷 Custom scoring engine
+- 🔔 Watchlist alerts
+- 🛠 Tool interface for AI agents (WebMCP integration)
+- 📊 Portfolio-level aggregation
+- ⏱ Snapshot scheduling automation
+- 🗃 DB persistence (SQLite / Postgres)
+
+---
+
+## ⚠️ Disclaimer
+
+This project uses publicly available market data.  
+It does **not** provide investment advice or trade recommendations.
+
+---
+
+## 👩‍💻 Author
 
 
+- Michelle Burton
+- Senior Front-End Engineer
+- Portfolio: https://www.michelle-burton.com
+- GitHub: https://github.com/michelleburton
+- YouTube: https://www.youtube.com/@QuantumAIDesign

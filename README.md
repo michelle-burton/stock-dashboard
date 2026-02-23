@@ -7,7 +7,7 @@
 # 🔗 Live Site
 
 
-👉 **https://stock-tracker-2tc9.onrender.com/Total%20Return%20Tracker**
+👉 **https://stock-tracker-2tc9.onrender.com/**
 
 ---
 
